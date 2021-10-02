@@ -179,3 +179,12 @@ Received Import Request.
 Start importing Assets/Images using Guid(7f872ac2ef079d44da713e7ec6198dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b053fdb9737a61ba89fad61edcf9478') in 0.005053 seconds 
   Import took 0.007745 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 120.560368 seconds.
+  path: Assets/Images/smoke3.png
+  artifactKey: Guid(f5c95e3d1d9f4c84fb8898f26ce11a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/smoke3.png using Guid(f5c95e3d1d9f4c84fb8898f26ce11a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8127381e93925569208c40a4332dd44b') in 0.089841 seconds 
+  Import took 0.092703 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
