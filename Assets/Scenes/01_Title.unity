@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 35074528}
   - component: {fileID: 35074527}
   m_Layer: 5
-  m_Name: 'SESlider '
+  m_Name: 'BGMSlider '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -185,9 +185,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 862182008}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 0.7
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0.7
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -206,7 +206,7 @@ RectTransform:
   - {fileID: 877748844}
   - {fileID: 796547190}
   m_Father: {fileID: 659475149}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -230,7 +230,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &156728701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2328f1215eccc24c81244d56d8fbb9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JUN_SEslider: {fileID: 35074527}
+  JUN_SEslider: {fileID: 1226238572}
   JUN_se: []
 --- !u!82 &156728702
 AudioSource:
@@ -866,8 +866,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1226238571}
   - {fileID: 35074528}
+  - {fileID: 1226238571}
   - {fileID: 388788098}
   - {fileID: 2014075045}
   m_Father: {fileID: 182898885}
@@ -1149,7 +1149,7 @@ GameObject:
   - component: {fileID: 1226238571}
   - component: {fileID: 1226238572}
   m_Layer: 5
-  m_Name: BGMSlider
+  m_Name: SESlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1170,7 +1170,7 @@ RectTransform:
   - {fileID: 1579699903}
   - {fileID: 210413862}
   m_Father: {fileID: 659475149}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1222,9 +1222,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1420038076}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 0.7
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0.7
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1320,7 +1320,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1566213799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1333,7 +1333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb60d44cd719a4541a507f7ac1ab4f57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JUN_BGMslider: {fileID: 1226238572}
+  JUN_BGMslider: {fileID: 35074527}
   JUN_clips:
   - {fileID: 8300000, guid: 37ecb474cb1bb2c4b97cb1ac386a72c2, type: 3}
 --- !u!82 &1566213800
