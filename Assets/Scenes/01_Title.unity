@@ -185,9 +185,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 862182008}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 0.7
+  m_MaxValue: 0.2
   m_WholeNumbers: 0
-  m_Value: 0.7
+  m_Value: 0.1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -230,7 +230,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &156728701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1320,7 +1320,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1566213799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1346,9 +1346,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 37ecb474cb1bb2c4b97cb1ac386a72c2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
