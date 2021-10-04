@@ -36,4 +36,19 @@ public class EnemyBullet : MonoBehaviour
         dy = Mathf.Sin(angle) * bulletSpeed;
     }
 
+    //Playerおよび寝ている少年と接触すると消えるようにしました。
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
+        }
+
+        if (collision.gameObject.tag == "SleepingBoy")
+        {
+            Destroy(gameObject);
+        }
+
+    }
+
 }

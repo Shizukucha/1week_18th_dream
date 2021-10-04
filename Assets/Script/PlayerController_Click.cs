@@ -5,7 +5,15 @@ using UnityEngine;
 public class PlayerController_Click : MonoBehaviour
 {
     private Vector3 setTapPos;
-    public float speed = 7f;
+    public float speed = 2.5f;
+
+    GameObject gameManager;
+
+    private void Start()
+    {
+        this.gameManager = GameObject.Find("GameManager");
+    }
+
 
     void Update()
     {
@@ -13,15 +21,16 @@ public class PlayerController_Click : MonoBehaviour
         Move();
     }
 
-    // タップした位置に移動する
+    // マウスポインタの位置に移動する
     private void Move()
     {
-        // ボタンを押したとき
+        // スペースを押したとき
         if (Input.GetKeyDown(KeyCode.Space))
         {
             setTapPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
-        // ボタンを押しているとき
+
+        // スペースを押しているとき
         if (Input.GetKey(KeyCode.Space))
         {
             setTapPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -30,24 +39,17 @@ public class PlayerController_Click : MonoBehaviour
             // Lerpで動かす
             transform.position = Vector3.Lerp(transform.position, setTapPos, speed * Time.deltaTime);
         }
+    }
 
-
-
-        /*
-        // ボタンを押したとき
-        if (Input.GetMouseButtonDown(0))
+    // 触れたものの識別はタグで管理。
+    // AddScoreの引数に加算されるポイントを入れる。
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.tag == "Bullet")
         {
-            setTapPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            this.gameManager.GetComponent<GameManager>().AddScore(10);
         }
-        // ボタンを押しているとき
-        if (Input.GetMouseButton(0))
-        {
-            setTapPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            setTapPos.z = 10;// カメラとプレイヤーの距離
 
-            // Lerpで動かす
-            transform.position = Vector3.Lerp(transform.position, setTapPos, speed * Time.deltaTime);
-        }
-        */
+
     }
 }
