@@ -250,11 +250,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ReferenceResolution: {x: 960, y: 540}
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -400,6 +400,7 @@ GameObject:
   - component: {fileID: 918774919}
   - component: {fileID: 918774918}
   - component: {fileID: 918774917}
+  - component: {fileID: 918774921}
   m_Layer: 5
   m_Name: ToGame
   m_TagString: Untagged
@@ -424,7 +425,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 286, y: -319.03}
+  m_AnchoredPosition: {x: 286, y: -156}
   m_SizeDelta: {x: 160, y: 62.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &918774917
@@ -485,7 +486,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 918774917}
         m_TargetAssemblyTypeName: SceneChanges, Assembly-CSharp
-        m_MethodName: GoToGame
+        m_MethodName: SceneTransitions
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -533,6 +534,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918774915}
   m_CullTransparentMesh: 1
+--- !u!114 &918774921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918774915}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3e4a23a7caaf4814b2889bc7b4d29fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RetryCheck: 1
+  audioSource: {fileID: 0}
+  audioClip: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 371b0afeb0523554e9560391376a818a, type: 3}
 --- !u!1 &982585835
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,6 +642,7 @@ GameObject:
   - component: {fileID: 1048496470}
   - component: {fileID: 1048496469}
   - component: {fileID: 1048496468}
+  - component: {fileID: 1048496472}
   m_Layer: 5
   m_Name: ToTitle
   m_TagString: Untagged
@@ -649,7 +667,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -382, y: -315.87}
+  m_AnchoredPosition: {x: -382, y: -156}
   m_SizeDelta: {x: 160, y: 55.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1048496468
@@ -758,6 +776,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048496466}
   m_CullTransparentMesh: 1
+--- !u!114 &1048496472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048496466}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3e4a23a7caaf4814b2889bc7b4d29fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RetryCheck: 0
+  audioSource: {fileID: 0}
+  audioClip: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 371b0afeb0523554e9560391376a818a, type: 3}
 --- !u!1 &1122920460
 GameObject:
   m_ObjectHideFlags: 0
