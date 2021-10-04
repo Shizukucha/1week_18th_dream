@@ -13,13 +13,13 @@ public class EnemySaccubus : MonoBehaviour
 
 
     public EnemyBullet bulletPrefab;
-    GameObject player;
+    GameObject sleeper;
 
 
 
     void Start()
     {
-        player = GameObject.FindWithTag("Player");
+        sleeper = GameObject.FindWithTag("SleepingBoy");
         StartCoroutine(CPU());//四回８方向に打つのを繰り返しなさい
 
         /*
@@ -93,10 +93,10 @@ public class EnemySaccubus : MonoBehaviour
     void PlayerAimShot(int count, float speed)
     {
         //この弾幕前にplayerが倒されていたら何もしない
-        if (player != null)
+        if (sleeper != null)
         {
             //　自分からみたPlayerの位置を計算する
-            Vector3 diffPosition = player.transform.position - transform.position;
+            Vector3 diffPosition = sleeper.transform.position - transform.position;
             //  自分から見たPlayerの角度を出す:傾きから角度を出す:アークタンジェントを使う
             float angleP = Mathf.Atan2(diffPosition.y, diffPosition.x);
 
