@@ -1,18 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class NewBehaviourScript1 : MonoBehaviour
+public class SceneChanges: MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	private static int currentIndex; // ???????V?[?????????????????i?[
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	private void Start()
+	{
+		currentIndex = SceneManager.GetActiveScene().buildIndex; // ???????V?[??????????????
+	}
+
+	public void SceneTransitions()
+	{
+		if (currentIndex != 2)
+		{
+			SceneManager.LoadScene(currentIndex + 1);
+		}
+		else
+		{
+			SceneManager.LoadScene(0);
+
+		}
+	}
+
+	public void GoToGame()
+	{
+		if (currentIndex == 2)
+		{
+			SceneManager.LoadScene(currentIndex - 1);
+		}
+	}
+
+
 }
