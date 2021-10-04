@@ -9,9 +9,13 @@ public class PlayerController_Click : MonoBehaviour
 
     GameObject gameManager;
 
+    bool isTouch;
+
+
     private void Start()
     {
         this.gameManager = GameObject.Find("GameManager");
+        isTouch = false;
     }
 
 
@@ -52,7 +56,10 @@ public class PlayerController_Click : MonoBehaviour
             Debug.Log("今マウス離してる");
         }
         */
-        
+
+
+        ///スペースでの操作
+        /*
         // スペースを押したとき
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -68,7 +75,11 @@ public class PlayerController_Click : MonoBehaviour
             // Lerpで動かす
             transform.position = Vector3.Lerp(transform.position, setTapPos, speed * Time.deltaTime);
         }
+        */
     }
+
+    /*
+
 
     // 触れたものの識別はタグで管理。
     // AddScoreの引数に加算されるポイントを入れる。
@@ -81,4 +92,5 @@ public class PlayerController_Click : MonoBehaviour
 
 
     }
+    */
 }
