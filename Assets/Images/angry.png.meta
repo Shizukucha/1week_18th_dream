@@ -1,31 +1,16 @@
 fileFormatVersion: 2
-guid: 3bf15b43a197330408dd2a4f0795f705
+guid: ac95edc6923e3fb4da7d758bdafc8656
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7894398018441573160
-    second: Kouka_0
+      213: -9082789242079819192
+    second: angry_0
   - first:
-      213: -3611804981926760830
-    second: Kouka_1
+      213: 389261486681303486
+    second: angry_1
   - first:
-      213: -5050654678235130703
-    second: Kouka_2
-  - first:
-      213: 1969844070506479117
-    second: Kouka_3
-  - first:
-      213: -7784590288668860158
-    second: Kouka_4
-  - first:
-      213: 7794443070572061540
-    second: Kouka_5
-  - first:
-      213: -1415828479327856195
-    second: Kouka_6
-  - first:
-      213: -1431519721402254829
-    second: Kouka_7
+      213: -8610559014388677992
+    second: angry_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -139,13 +124,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kouka_0
+      name: angry_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 634
-        width: 324
-        height: 390
+        x: 38
+        y: 128
+        width: 47
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +138,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dc0e3b14d6717290800000000000000
-      internalID: -7894398018441573160
+      spriteID: 84ac7189e4373f180800000000000000
+      internalID: -9082789242079819192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kouka_1
+      name: angry_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 241
-        width: 365
-        height: 362
+        x: 157
+        y: 128
+        width: 48
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28ee44e418a40edc0800000000000000
-      internalID: -3611804981926760830
+      spriteID: eb9216e724fe66500800000000000000
+      internalID: 389261486681303486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kouka_2
+      name: angry_2
       rect:
         serializedVersion: 2
-        x: 6
-        y: 3
-        width: 268
-        height: 225
+        x: 49
+        y: 44
+        width: 131
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,113 +180,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b451a4645878e9b0800000000000000
-      internalID: -5050654678235130703
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kouka_3
-      rect:
-        serializedVersion: 2
-        x: 639
-        y: 0
-        width: 385
-        height: 353
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d0eb275deba465b10800000000000000
-      internalID: 1969844070506479117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kouka_4
-      rect:
-        serializedVersion: 2
-        x: 422
-        y: 363
-        width: 212
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 201efe1806497f390800000000000000
-      internalID: -7784590288668860158
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kouka_5
-      rect:
-        serializedVersion: 2
-        x: 744
-        y: 441
-        width: 280
-        height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 463e37b0dac6b2c60800000000000000
-      internalID: 7794443070572061540
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kouka_6
-      rect:
-        serializedVersion: 2
-        x: 737
-        y: 724
-        width: 287
-        height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db918cadf77f95ce0800000000000000
-      internalID: -1415828479327856195
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kouka_7
-      rect:
-        serializedVersion: 2
-        x: 342
-        y: 653
-        width: 344
-        height: 371
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31a3adcd568322ce0800000000000000
-      internalID: -1431519721402254829
+      spriteID: 89243d57236218880800000000000000
+      internalID: -8610559014388677992
       vertices: []
       indices: 
       edges: []

@@ -1,31 +1,22 @@
 fileFormatVersion: 2
-guid: 3bf15b43a197330408dd2a4f0795f705
+guid: 8ae67dd34f5b23748ab1dbc91a048a75
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7894398018441573160
-    second: Kouka_0
+      213: -8828332941952408444
+    second: BalletSchool_0
   - first:
-      213: -3611804981926760830
-    second: Kouka_1
+      213: -3137256889322802599
+    second: BalletSchool_1
   - first:
-      213: -5050654678235130703
-    second: Kouka_2
+      213: 3407444315821438884
+    second: BalletSchool_2
   - first:
-      213: 1969844070506479117
-    second: Kouka_3
+      213: 1124623092312526532
+    second: BalletSchool_3
   - first:
-      213: -7784590288668860158
-    second: Kouka_4
-  - first:
-      213: 7794443070572061540
-    second: Kouka_5
-  - first:
-      213: -1415828479327856195
-    second: Kouka_6
-  - first:
-      213: -1431519721402254829
-    second: Kouka_7
+      213: 3241904952553178280
+    second: BalletSchool_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -139,13 +130,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kouka_0
+      name: BalletSchool_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 634
-        width: 324
-        height: 390
+        x: 31
+        y: 24
+        width: 281
+        height: 299
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +144,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dc0e3b14d6717290800000000000000
-      internalID: -7894398018441573160
+      spriteID: 4842c0cb6f57b7580800000000000000
+      internalID: -8828332941952408444
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kouka_1
+      name: BalletSchool_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 241
-        width: 365
-        height: 362
+        x: 325
+        y: 12
+        width: 200
+        height: 321
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,41 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28ee44e418a40edc0800000000000000
-      internalID: -3611804981926760830
+      spriteID: 95274c62b793674d0800000000000000
+      internalID: -3137256889322802599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kouka_2
+      name: BalletSchool_2
       rect:
         serializedVersion: 2
-        x: 6
-        y: 3
-        width: 268
-        height: 225
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b451a4645878e9b0800000000000000
-      internalID: -5050654678235130703
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kouka_3
-      rect:
-        serializedVersion: 2
-        x: 639
+        x: 698
         y: 0
-        width: 385
-        height: 353
+        width: 326
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0eb275deba465b10800000000000000
-      internalID: 1969844070506479117
+      spriteID: 4a7f5744d8ca94f20800000000000000
+      internalID: 3407444315821438884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kouka_4
+      name: BalletSchool_3
       rect:
         serializedVersion: 2
-        x: 422
-        y: 363
-        width: 212
-        height: 264
+        x: 724
+        y: 620
+        width: 277
+        height: 235
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +207,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 201efe1806497f390800000000000000
-      internalID: -7784590288668860158
+      spriteID: 4ce4d737eb67b9f00800000000000000
+      internalID: 1124623092312526532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kouka_5
+      name: BalletSchool_4
       rect:
         serializedVersion: 2
-        x: 744
-        y: 441
-        width: 280
-        height: 270
+        x: 539
+        y: 37
+        width: 68
+        height: 286
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,50 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 463e37b0dac6b2c60800000000000000
-      internalID: 7794443070572061540
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kouka_6
-      rect:
-        serializedVersion: 2
-        x: 737
-        y: 724
-        width: 287
-        height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db918cadf77f95ce0800000000000000
-      internalID: -1415828479327856195
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kouka_7
-      rect:
-        serializedVersion: 2
-        x: 342
-        y: 653
-        width: 344
-        height: 371
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31a3adcd568322ce0800000000000000
-      internalID: -1431519721402254829
+      spriteID: 8a40384c06f8dfc20800000000000000
+      internalID: 3241904952553178280
       vertices: []
       indices: 
       edges: []
