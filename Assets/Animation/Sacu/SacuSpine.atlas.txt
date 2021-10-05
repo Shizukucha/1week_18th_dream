@@ -1,0 +1,181 @@
+
+SacuSpine.png
+size: 1527,790
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: true
+  xy: 1118, 41
+  size: 298, 283
+  orig: 298, 283
+  offset: 0, 0
+  index: -1
+EyeWide_L
+  rotate: false
+  xy: 1341, 517
+  size: 160, 76
+  orig: 160, 76
+  offset: 0, 0
+  index: -1
+EyeWide_R
+  rotate: false
+  xy: 1341, 517
+  size: 160, 76
+  orig: 160, 76
+  offset: 0, 0
+  index: -1
+Eye_L
+  rotate: true
+  xy: 716, 93
+  size: 51, 68
+  orig: 51, 68
+  offset: 0, 0
+  index: -1
+Eye_R
+  rotate: true
+  xy: 716, 40
+  size: 51, 68
+  orig: 51, 68
+  offset: 0, 0
+  index: -1
+Face
+  rotate: false
+  xy: 789, 10
+  size: 327, 329
+  orig: 327, 329
+  offset: 0, 0
+  index: -1
+Hair
+  rotate: true
+  xy: 2, 144
+  size: 644, 599
+  orig: 644, 599
+  offset: 0, 0
+  index: -1
+Hand_L
+  rotate: false
+  xy: 1403, 97
+  size: 99, 83
+  orig: 99, 83
+  offset: 0, 0
+  index: -1
+Hand_R
+  rotate: false
+  xy: 1403, 182
+  size: 103, 96
+  orig: 103, 96
+  offset: 0, 0
+  index: -1
+Lower_Arm_L
+  rotate: true
+  xy: 621, 2
+  size: 142, 93
+  orig: 142, 93
+  offset: 0, 0
+  index: -1
+Lower_Arm_R
+  rotate: true
+  xy: 175, 9
+  size: 133, 90
+  orig: 133, 90
+  offset: 0, 0
+  index: -1
+Lower_Leg_L
+  rotate: false
+  xy: 1403, 11
+  size: 55, 84
+  orig: 55, 84
+  offset: 0, 0
+  index: -1
+Lower_Leg_R
+  rotate: false
+  xy: 1460, 11
+  size: 48, 84
+  orig: 48, 84
+  offset: 0, 0
+  index: -1
+Mouth_grim
+  rotate: true
+  xy: 116, 8
+  size: 134, 57
+  orig: 134, 57
+  offset: 0, 0
+  index: -1
+Mouth_smile
+  rotate: true
+  xy: 267, 15
+  size: 127, 39
+  orig: 127, 39
+  offset: 0, 0
+  index: -1
+Shoe_L
+  rotate: true
+  xy: 308, 26
+  size: 116, 143
+  orig: 116, 143
+  offset: 0, 0
+  index: -1
+Shoe_R
+  rotate: false
+  xy: 2, 4
+  size: 112, 138
+  orig: 112, 138
+  offset: 0, 0
+  index: -1
+Tuno_L
+  rotate: true
+  xy: 603, 146
+  size: 193, 184
+  orig: 193, 184
+  offset: 0, 0
+  index: -1
+Tuno_R
+  rotate: true
+  xy: 1341, 595
+  size: 193, 184
+  orig: 193, 184
+  offset: 0, 0
+  index: -1
+Upper_Arm_L
+  rotate: false
+  xy: 453, 29
+  size: 166, 113
+  orig: 166, 113
+  offset: 0, 0
+  index: -1
+Upper_Arm_R
+  rotate: false
+  xy: 1341, 410
+  size: 150, 105
+  orig: 150, 105
+  offset: 0, 0
+  index: -1
+Upper_Leg_L
+  rotate: true
+  xy: 1341, 343
+  size: 65, 108
+  orig: 65, 108
+  offset: 0, 0
+  index: -1
+Upper_Leg_R
+  rotate: true
+  xy: 1403, 280
+  size: 61, 113
+  orig: 61, 113
+  offset: 0, 0
+  index: -1
+Wing_L
+  rotate: true
+  xy: 603, 341
+  size: 447, 367
+  orig: 447, 367
+  offset: 0, 0
+  index: -1
+Wing_R
+  rotate: true
+  xy: 972, 341
+  size: 447, 367
+  orig: 447, 367
+  offset: 0, 0
+  index: -1
