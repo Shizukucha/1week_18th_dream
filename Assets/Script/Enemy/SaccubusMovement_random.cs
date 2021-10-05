@@ -4,19 +4,18 @@ using UnityEngine;
 
 public class SaccubusMovement_random : MonoBehaviour
 {
-    GameObject SaccubusPointerGenerator;
-
     public GameObject target;
     [SerializeField] float speed;
-    [SerializeField] float waitTime;
+    [SerializeField] float shotTime = 0.5f;
+    [SerializeField] float waitTime = 1.0f;
+
+    [SerializeField] GameObject nightmarePrefab;
 
     private bool wait = true;
 
     void Start()
     {
         target = GameObject.Find("SaccubusPointer");
-        this.SaccubusPointerGenerator = GameObject.Find("SaccubusPointerGenerator");
-
         wait = false;
     }
 
@@ -42,6 +41,10 @@ public class SaccubusMovement_random : MonoBehaviour
 
             wait = true;
 
+            
+            Invoke("Shot", shotTime);
+            
+
             Invoke("StartMove", waitTime);
         }
     }
@@ -50,5 +53,12 @@ public class SaccubusMovement_random : MonoBehaviour
     {
         wait = false;
     }
+
+    public void Shot()
+    {
+        GameObject nightmare = Instantiate(nightmarePrefab) as GameObject;
+        nightmare.transform.position = this.gameObject.transform.position;
+    }
+
 
 }
