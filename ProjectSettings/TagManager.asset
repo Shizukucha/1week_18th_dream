@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Bullet
   - SleepingBoy
+  - Saccubus
+  - SaccubusPointer
   layers:
   - Default
   - TransparentFX

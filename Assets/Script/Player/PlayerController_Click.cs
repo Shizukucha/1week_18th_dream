@@ -9,13 +9,9 @@ public class PlayerController_Click : MonoBehaviour
 
     GameObject gameManager;
 
-    bool isTouch;
-
-
     private void Start()
     {
         this.gameManager = GameObject.Find("GameManager");
-        isTouch = false;
     }
 
 
@@ -28,38 +24,6 @@ public class PlayerController_Click : MonoBehaviour
     // マウスポインタの位置に移動する
     private void Move()
     {
-        /*
-        /// <summary>
-        /// マウスボタン押した間の移動ver.Byジューン
-        /// </summary>
-        /// <returns>マウスボタン</returns>
-        // マウスボタンを押しているとき
-        
-        if (Input.GetMouseButton(0))
-        {
-            
-            setTapPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        }
-
-        // マウスボタンを押しているとき
-        if (Input.GetMouseButton(0))
-        {
-            Debug.Log("今マウス押してる");
-            setTapPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            setTapPos.z = 10;// カメラとプレイヤーの距離
-
-            // Lerpで動かす
-            transform.position = Vector3.Lerp(transform.position, setTapPos, speed * Time.deltaTime);
-        }
-        else
-        {
-            Debug.Log("今マウス離してる");
-        }
-        */
-
-
-        ///スペースでの操作
-        /*
         // スペースを押したとき
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -75,11 +39,10 @@ public class PlayerController_Click : MonoBehaviour
             // Lerpで動かす
             transform.position = Vector3.Lerp(transform.position, setTapPos, speed * Time.deltaTime);
         }
-        */
     }
 
+    
     /*
-
 
     // 触れたものの識別はタグで管理。
     // AddScoreの引数に加算されるポイントを入れる。
@@ -92,5 +55,7 @@ public class PlayerController_Click : MonoBehaviour
 
 
     }
+
     */
+    
 }
