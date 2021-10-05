@@ -49,9 +49,9 @@ TagManager:
   - name: BG
     uniqueID: 2318251823
     locked: 0
-  - name: UI
-    uniqueID: 889714505
-    locked: 0
   - name: GameObjects
     uniqueID: 48307019
+    locked: 0
+  - name: UI
+    uniqueID: 889714505
     locked: 0

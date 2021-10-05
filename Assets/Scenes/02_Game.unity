@@ -385,7 +385,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 48307019
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &279760012
@@ -613,8 +613,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 48307019
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -8234802781319618075, guid: 56e16c12e448c6a459c80475273e21f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -997,7 +997,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 48307019
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &621407427
@@ -1795,7 +1795,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 48307019
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1261279208
@@ -2341,7 +2341,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 48307019
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1585136810
