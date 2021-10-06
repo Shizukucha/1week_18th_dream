@@ -59,3 +59,6 @@ TagManager:
   - name: UI
     uniqueID: 889714505
     locked: 0
+  - name: HowTo
+    uniqueID: 4225336337
+    locked: 0
