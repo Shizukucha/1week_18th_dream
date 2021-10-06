@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class PlayerController_newClick : MonoBehaviour
 {
-    public GameObject target;
+    private GameObject target;
     public float speed;
-    public bool isTouch;
+    private bool isTouch;
+    private bool canMove;
 
     GameObject gameManager;
+
+    [SerializeField] float shakeTime = 1.5f;
 
 
     void Start()
@@ -17,6 +21,7 @@ public class PlayerController_newClick : MonoBehaviour
         this.gameManager = GameObject.Find("GameManager");
 
         isTouch = false;
+        canMove = true;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -29,19 +34,22 @@ public class PlayerController_newClick : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKey(KeyCode.Space))
+        if(canMove == true)
         {
-            isTouch = true;
-        }
+            if (Input.GetKey(KeyCode.Space))
+            {
+                isTouch = true;
+            }
 
-        if(Input.GetMouseButtonDown(0))
-        {
-            isTouch = false;
-        }
+            if (Input.GetMouseButtonDown(0))
+            {
+                isTouch = false;
+            }
 
-        if (isTouch == false)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed);
+            if (isTouch == false)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed);
+            }
         }
     }
 
@@ -50,9 +58,33 @@ public class PlayerController_newClick : MonoBehaviour
     // AddScoreの引数に加算されるポイントを入れる。
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Bullet")
+        if (other.gameObject.tag == "Nightmare1")
         {
             this.gameManager.GetComponent<GameManager>().AddScore(10);
         }
+
+        if (other.gameObject.tag == "Nightmare2")
+        {
+            this.gameManager.GetComponent<GameManager>().AddScore(30);
+        }
+
+        if (other.gameObject.tag == "Bat")
+        {
+            Damage();
+        }
     }
+
+    public void Damage()
+    {
+        canMove = false;
+        transform.DOShakePosition(shakeTime, 0.2f).OnComplete(SetCanMoveTrue);
+    }
+
+    public void SetCanMoveTrue()
+    {
+        canMove = true;
+    }
+
+
+
 }

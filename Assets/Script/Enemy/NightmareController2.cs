@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class NightmareController : MonoBehaviour
+public class NightmareController2 : MonoBehaviour
 {
     private GameObject sleepingboy;
-    public float movementTime = 5f;
-    public float scaleValue = 0.5f;
-    public float scaleChangeTime = 1f;
+    [SerializeField] float scaleValue = 0.5f;
+    [SerializeField] float scaleChangeTime = 1f;
+    [SerializeField] float delayTime = 3f;
+    [SerializeField] float movementTime = 5f;
 
-    [SerializeField] bool rotate = false;
+
+
 
     private float delta;
 
@@ -18,18 +20,23 @@ public class NightmareController : MonoBehaviour
     {
         //飼い主の頭の位置を取得
         sleepingboy = GameObject.Find("HeadPosition");
+
+        //飼い主の頭に向かって飛ぶ
         MoveToSleepingBoy();
 
-        if(rotate == true)
-        {
-            transform.DOLocalRotate(new Vector3(0, 0, 360f), 3f, RotateMode.FastBeyond360).SetEase(Ease.Linear).SetLoops(-1, LoopType.Restart).SetLink(gameObject);
-        }
+        //スケールの変更
+        transform.DOScale(new Vector3(scaleValue, scaleValue, scaleValue), scaleChangeTime).SetLink(gameObject);
+
+        //飼い主の方向に向く
+        float angle = GetAngle(this.gameObject.transform.position, sleepingboy.transform.position);
+        gameObject.transform.rotation = Quaternion.Euler(0, 0, angle);
 
     }
 
     void Update()
     {
         delta += Time.deltaTime;
+
 
         //画面外に出たら消える
         if (gameObject.transform.position.y < -6f
@@ -48,11 +55,8 @@ public class NightmareController : MonoBehaviour
         float x = sleepingboy.transform.position.x;
         float y = sleepingboy.transform.position.y;
 
-        //拡大縮小の繰り返し
-        transform.DOScale(new Vector3(scaleValue, scaleValue, scaleValue), scaleChangeTime).SetLoops(-1, LoopType.Yoyo).SetLink(gameObject);
-
-        //飼い主に向かって移動
-        transform.DOLocalMove(new Vector3(x, y, 0), movementTime).SetLink(gameObject);
+        //飼い主に向かって移動（delayTime秒遅延）
+        transform.DOLocalMove(new Vector3(x, y, 0), movementTime).SetLink(gameObject).SetDelay(delayTime); ;
     }
 
 
@@ -70,4 +74,15 @@ public class NightmareController : MonoBehaviour
         }
 
     }
+
+    float GetAngle(Vector2 start, Vector2 target)
+    {
+        Vector2 dt = target - start;
+        float rad = Mathf.Atan2(dt.y, dt.x);
+        float degree = rad * Mathf.Rad2Deg;
+
+        return degree;
+    }
+
+
 }
