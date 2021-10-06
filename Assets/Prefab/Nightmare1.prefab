@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4331050100194823572}
   m_Layer: 0
   m_Name: Nightmare1
-  m_TagString: Bullet
+  m_TagString: Nightmare1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21e81121ad5954d799981328376d84da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementTime: 15
+  movementTime: 10
   scaleValue: 0.15
   scaleChangeTime: 1.5
   rotate: 1

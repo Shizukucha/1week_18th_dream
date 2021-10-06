@@ -46,6 +46,7 @@ public class BatController : MonoBehaviour
         float x = player.transform.position.x;
         float y = player.transform.position.y;
 
+
         //プレイヤーに向かって移動
         transform.DOLocalMove(new Vector3(x, y, 0), movementTime).SetLink(gameObject).OnComplete(MoveToPlayer);
 
@@ -77,6 +78,11 @@ public class BatController : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             transform.DOScale(new Vector3(2f, 2f, 2f), 0.4f).SetLink(gameObject).OnComplete(Vanish);
+        }
+
+        if (collision.gameObject.tag == "Bakubaku")
+        {
+            Destroy(gameObject);
         }
     }
 

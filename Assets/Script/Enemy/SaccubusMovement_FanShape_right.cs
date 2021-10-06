@@ -8,31 +8,42 @@ public class SaccubusMovement_FanShape_right : MonoBehaviour
     [SerializeField] float moveTime = 5f;
     [SerializeField] float x = -7.5f;
     [SerializeField] float y = 6f;
-    public float span = 6.0f;
+    [SerializeField] float span = 6.0f;
+    [SerializeField] float changedSpan = 3.0f;
+    [SerializeField] float spanChangeTime = 40;
 
     [SerializeField] GameObject nightmarePrefab1;
+    [SerializeField] GameObject nightmarePrefab2;
+    [SerializeField] GameObject batPrefab;
 
     private float delta = 0;
+    private float time;
+    private GameObject nightmare;
 
     private void Start()
     {
         FanMove();
     }
 
-
-
     void Update()
     {
-        this.delta += Time.deltaTime;
-        if (this.delta > this.span)
+        time = GameManager.I.time;
+
+        //??????????????
+        if (time < spanChangeTime)
         {
-            /*
-            // ?T?L???o?X???U?????????????i?????????????????\???????jBy?????[??
-            JUN_SEManagerScript.instance.JUN_SettingPlaySE(10);
-            */
-            Shot_1();
+            span = changedSpan;
         }
 
+        this.delta += Time.deltaTime;
+        if (this.span < this.delta)
+        {
+            
+            // ?T?L???o?X???U?????????????i?????????????????\???????jBy?????[??
+            JUN_SEManagerScript.instance.JUN_SettingPlaySE(10);
+            
+            Shot();
+        }
     }
 
     public void FanMove()
@@ -42,12 +53,56 @@ public class SaccubusMovement_FanShape_right : MonoBehaviour
     }
 
 
-    public void Shot_1()
+    public void Shot()
     {
-        GameObject nightmare = Instantiate(nightmarePrefab1) as GameObject;
+
+        int generateDice;
+        generateDice = Random.Range(0, 11);
+
+        if (30 < time) // 30??????:90%??:10%
+        {
+            if (generateDice < 10)
+            {
+                GenerateNightmare_1();
+            }
+            else if (10 <= generateDice && generateDice < 11)
+            {
+                GenerateNightmare_2();
+            }
+        }
+        else if (time <= 30)// 30????????:60%??:20%??:20%
+        {
+            if (generateDice < 7)
+            {
+                GenerateNightmare_1();
+            }
+            else if (7 <= generateDice && generateDice < 9)
+            {
+                GenerateNightmare_2();
+            }
+            else if (9 <= generateDice && generateDice < 11)
+            {
+                GenerateBat();
+            }
+        }
+
         nightmare.transform.position = this.gameObject.transform.position;
-        delta = 0f;
+        delta = 0;
     }
 
+    public void GenerateNightmare_1()
+    {
+        nightmare = Instantiate(nightmarePrefab1) as GameObject;
+    }
 
+    public void GenerateNightmare_2()
+    {
+        nightmare = Instantiate(nightmarePrefab2) as GameObject;
+    }
+
+    public void GenerateBat()
+    {
+        nightmare = Instantiate(batPrefab) as GameObject;
+    }
 }
+

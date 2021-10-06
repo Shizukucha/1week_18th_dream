@@ -73,6 +73,11 @@ public class NightmareController2 : MonoBehaviour
             Destroy(gameObject);
         }
 
+        if (collision.gameObject.tag == "Bakubaku")
+        {
+            Destroy(gameObject);
+        }
+
     }
 
     float GetAngle(Vector2 start, Vector2 target)

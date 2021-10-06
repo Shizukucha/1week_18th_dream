@@ -69,5 +69,10 @@ public class NightmareController : MonoBehaviour
             Destroy(gameObject);
         }
 
+        if (collision.gameObject.tag == "Bakubaku")
+        {
+            Destroy(gameObject);
+        }
+
     }
 }

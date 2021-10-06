@@ -60,17 +60,20 @@ public class PlayerController_newClick : MonoBehaviour
     {
         if (other.gameObject.tag == "Nightmare1")
         {
-            this.gameManager.GetComponent<GameManager>().AddScore(10);
+            GameManager.I.AddScore(10);
+            GameManager.I.AddSP(1);
         }
 
         if (other.gameObject.tag == "Nightmare2")
         {
-            this.gameManager.GetComponent<GameManager>().AddScore(30);
+            GameManager.I.AddScore(30);
+            GameManager.I.AddSP(1);
         }
 
         if (other.gameObject.tag == "Bat")
         {
             Damage();
+            GameManager.I.ResetSP();
         }
     }
 

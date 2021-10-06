@@ -10,8 +10,9 @@ TagManager:
   - SaccubusPointer
   - Head
   - Nightmare1
-  - NIghtmare2
   - Bat
+  - Bakubaku
+  - Nightmare2
   layers:
   - Default
   - TransparentFX
@@ -21,8 +22,8 @@ TagManager:
   - UI
   - Player
   - Enemy
-  - 
-  - 
+  - Bakubaku
+  - SleepingBoy
   - 
   - 
   - 
