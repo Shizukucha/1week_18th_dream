@@ -41,8 +41,10 @@ public class SaccubusMovement_random : MonoBehaviour
 
             wait = true;
 
-            
+            // サキュバスの攻撃音の仮追加（音自体は変わる可能性あり）Byじゅーん
+            JUN_SEManagerScript.instance.JUN_SettingPlaySE(10);
             Invoke("Shot", shotTime);
+
             
 
             Invoke("StartMove", waitTime);

@@ -63,12 +63,15 @@ public class SceneSwitcher : MonoBehaviour
 
 			JUN_BGMManagerScript.instance.JUN_TransitionBGM(currentIndex);
             
-			/*if (currentIndex ==  0)
+			if (currentIndex ==  0)
             {
-				JUN_SEManagerScript.instance.JUN_SettingPlaySE(0);
-				
+				JUN_SEManagerScript.instance.JUN_SettingPlaySE(0);//「スタート」「タイトルへ」「リトライ」音
 			}
-			*/
+            else
+            {
+				JUN_SEManagerScript.instance.JUN_SettingPlaySE(5);// タイムアップ音
+			}
+			
 			//次のシーンへ遷移
 			JUN_OnMaskToScene(currentIndex);
 			Debug.Log("←");
@@ -77,6 +80,7 @@ public class SceneSwitcher : MonoBehaviour
 
 		else if(currentIndex ==2 ) //現在が最後のシーンの場合かつリトライするとき
 		{
+			JUN_SEManagerScript.instance.JUN_SettingPlaySE(0);//「スタート」「タイトルへ」「リトライ」音
 			JUN_OnMaskToScene(currentIndex);
 		}
         

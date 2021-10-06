@@ -40,22 +40,33 @@ public class JUN_SEManagerScript : MonoBehaviour
         {
             default:
             case 0:
-                audioSource.PlayOneShot(JUN_se[0]);//スタート音かつSE調整用
+                audioSource.PlayOneShot(JUN_se[0]);//「スタート」「タイトルへ」「リトライ」
                 break;
 
             case 1:
-                audioSource.PlayOneShot(JUN_se[1]);// 親ネズミが食われる
+                audioSource.PlayOneShot(JUN_se[1]);// SE調整用
                 break;
 
             case 2:
-                audioSource.PlayOneShot(JUN_se[2]);//チーズ取得用
+                audioSource.PlayOneShot(JUN_se[2]);//バクが夢を食べるときの音
                 break;
-
-            case 3:
-                audioSource.PlayOneShot(JUN_se[3]);//子ネズミが猫に捕食される
+            case 10:
+                audioSource.PlayOneShot(JUN_se[3]);//サキュバスの攻撃音
                 break;
             case 4:
-                audioSource.PlayOneShot(JUN_se[4]);//クリア時
+                audioSource.PlayOneShot(JUN_se[4]);//男の子に弾があたった音タイムアップ音
+                break;
+            case 5:
+                audioSource.PlayOneShot(JUN_se[5]);//タイムアップ音
+                break;
+            case 6:
+                audioSource.PlayOneShot(JUN_se[6]);//ららーん（リザルト画面遷移音）
+                break;
+            case 7:
+                audioSource.PlayOneShot(JUN_se[7]);//ふつう（リザルト画面遷移音）
+                break;
+            case 8:
+                audioSource.PlayOneShot(JUN_se[8]);//ZZZ（リザルト画面遷移音）
                 break;
 
 

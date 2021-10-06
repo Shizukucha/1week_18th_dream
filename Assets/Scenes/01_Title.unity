@@ -636,7 +636,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &156728701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -650,7 +650,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JUN_SEslider: {fileID: 1226238572}
-  JUN_se: []
+  JUN_se:
+  - {fileID: 8300000, guid: b816f948d39b4624d8412010c35b8397, type: 3}
+  - {fileID: 8300000, guid: b816f948d39b4624d8412010c35b8397, type: 3}
+  - {fileID: 8300000, guid: b816f948d39b4624d8412010c35b8397, type: 3}
+  - {fileID: 8300000, guid: b816f948d39b4624d8412010c35b8397, type: 3}
+  - {fileID: 8300000, guid: b816f948d39b4624d8412010c35b8397, type: 3}
+  - {fileID: 8300000, guid: b816f948d39b4624d8412010c35b8397, type: 3}
+  - {fileID: 8300000, guid: b816f948d39b4624d8412010c35b8397, type: 3}
 --- !u!82 &156728702
 AudioSource:
   m_ObjectHideFlags: 0

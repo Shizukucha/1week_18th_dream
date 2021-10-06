@@ -30,6 +30,8 @@ public class SaccubusMovement_FanShape_left : MonoBehaviour
         this.delta += Time.deltaTime;
         if (this.delta > this.span)
         {
+            // サキュバスの攻撃音の仮追加（音自体は変わる可能性あり）Byじゅーん
+            JUN_SEManagerScript.instance.JUN_SettingPlaySE(10);
             Shot_1();
         }
 

@@ -83,6 +83,7 @@ public class EnemySaccubus : MonoBehaviour
             float angle = i * (2 * Mathf.PI / bulletCount); // 2PI:360 
             Shot(angle, speed);
         }
+        JUN_SEManagerScript.instance.JUN_SettingPlaySE(10);//サキュバスの攻撃音
         yield return new WaitForSeconds(0.1f);
     }
 
@@ -121,7 +122,7 @@ public class EnemySaccubus : MonoBehaviour
             ShotN(m, 2);
             yield return new WaitForSeconds(0.3f);//
         }
-
+        JUN_SEManagerScript.instance.JUN_SettingPlaySE(10);//サキュバスの攻撃音
     }
     IEnumerator ShotNCurve(int count, float speed)
     {
@@ -143,6 +144,7 @@ public class EnemySaccubus : MonoBehaviour
             yield return ShotNCurve(m, 2);
             yield return new WaitForSeconds(0.3f);//徐々にずらしながら打つ　一度にすると弾が全て重なってしまう
         }
+        JUN_SEManagerScript.instance.JUN_SettingPlaySE(10);//サキュバスの攻撃音
 
     }
     /*IEnumerator WaveNPlayerAimShot(int n, int m)
@@ -163,6 +165,7 @@ public class EnemySaccubus : MonoBehaviour
             yield return new WaitForSeconds(1f);
             PlayerAimShot(m, 3);
         }
+        JUN_SEManagerScript.instance.JUN_SettingPlaySE(10);//サキュバスの攻撃音
 
     }
 
