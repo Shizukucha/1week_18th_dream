@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 279760016}
   - component: {fileID: 279760015}
   - component: {fileID: 279760014}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -894,8 +894,8 @@ GameObject:
   - component: {fileID: 621407424}
   - component: {fileID: 621407429}
   - component: {fileID: 621407430}
-  m_Layer: 0
-  m_Name: Saccubus_createdByShizukusa_left
+  m_Layer: 7
+  m_Name: Saccubus_createdByShizukusa_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1016,7 +1016,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 621407423}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.31, y: -0.71, z: 0}
+  m_LocalPosition: {x: 7.52, y: -2.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1029,7 +1029,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 621407423}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c26e041fee754a41a03c4eef03d7b2b, type: 3}
   m_Name: 
@@ -1044,12 +1044,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 621407423}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61dceea7f883e4379bb4328f68e71b94, type: 3}
+  m_Script: {fileID: 11500000, guid: b27c51fb7ad784cffa57b026bc00eaa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.75
-  xRange: 0.8
-  yRange: 3
+  moveTime: 5
+  x: -7.5
+  y: 6
+  span: 2.5
+  nightmarePrefab1: {fileID: 1228643249706252206, guid: ff703847db7c5456cb3af00509387a15, type: 3}
 --- !u!1 &712721734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1662,7 +1664,7 @@ GameObject:
   - component: {fileID: 1261279203}
   - component: {fileID: 1261279210}
   - component: {fileID: 1261279211}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Saccubus_createdByShizukusa_bottom
   m_TagString: Saccubus
   m_Icon: {fileID: 0}
@@ -2210,8 +2212,8 @@ GameObject:
   - component: {fileID: 1585136807}
   - component: {fileID: 1585136806}
   - component: {fileID: 1585136804}
-  m_Layer: 0
-  m_Name: Saccubus_createdByShizukusa_right
+  m_Layer: 7
+  m_Name: Saccubus_createdByShizukusa_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2226,12 +2228,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1585136803}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 166c102be5ca5410ca3f9ae5d34ab622, type: 3}
+  m_Script: {fileID: 11500000, guid: c3d8dbba590c149f6848e0ebd27168e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  xRange: 1.25
-  yRange: 3.75
+  moveTime: 3.5
+  x: -6.5
+  y: -4.5
+  span: 3
+  nightmarePrefab1: {fileID: 1228643249706252206, guid: ff703847db7c5456cb3af00509387a15, type: 3}
 --- !u!114 &1585136806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2239,7 +2243,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1585136803}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c26e041fee754a41a03c4eef03d7b2b, type: 3}
   m_Name: 
@@ -2360,7 +2364,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1585136803}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.31, y: -0.59, z: 0}
+  m_LocalPosition: {x: -1.78, y: 3.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
