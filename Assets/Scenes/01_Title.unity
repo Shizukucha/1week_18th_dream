@@ -3799,7 +3799,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1188789725
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4410,8 +4410,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   JUN_BGMslider: {fileID: 35074527}
   JUN_clips:
-  - {fileID: 8300000, guid: 37ecb474cb1bb2c4b97cb1ac386a72c2, type: 3}
-  - {fileID: 8300000, guid: 37ecb474cb1bb2c4b97cb1ac386a72c2, type: 3}
+  - {fileID: 8300000, guid: 2bf81dbe979f3d74cb14b52f71338420, type: 3}
+  - {fileID: 8300000, guid: 2bf81dbe979f3d74cb14b52f71338420, type: 3}
+  - {fileID: 8300000, guid: a0580477acc5cf8469f3bda10be8d7b9, type: 3}
 --- !u!82 &1566213800
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4422,7 +4423,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 37ecb474cb1bb2c4b97cb1ac386a72c2, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2bf81dbe979f3d74cb14b52f71338420, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
@@ -5040,7 +5041,6 @@ GameObject:
   - component: {fileID: 1803885971}
   - component: {fileID: 1803885970}
   - component: {fileID: 1803885969}
-  - component: {fileID: 1803885972}
   - component: {fileID: 1803885973}
   m_Layer: 5
   m_Name: Button
@@ -5162,18 +5162,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803885967}
   m_CullTransparentMesh: 1
---- !u!114 &1803885972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1803885967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c3550249501e9544a27aeeb5715fec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1803885973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5189,7 +5177,7 @@ MonoBehaviour:
   RetryCheck: 0
   audioSource: {fileID: 0}
   audioClip: {fileID: 0}
-  maskTexture: {fileID: 2800000, guid: 371b0afeb0523554e9560391376a818a, type: 3}
+  maskTexture: {fileID: 2800000, guid: ef76efab5462bee46b1d286975519aa6, type: 3}
 --- !u!1 &1864000531
 GameObject:
   m_ObjectHideFlags: 0

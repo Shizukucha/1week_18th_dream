@@ -1333,7 +1333,6 @@ GameObject:
   - component: {fileID: 918774920}
   - component: {fileID: 918774919}
   - component: {fileID: 918774918}
-  - component: {fileID: 918774917}
   - component: {fileID: 918774921}
   m_Layer: 5
   m_Name: ToGame
@@ -1362,18 +1361,6 @@ RectTransform:
   m_AnchoredPosition: {x: -167, y: -155}
   m_SizeDelta: {x: 160, y: 62.07}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &918774917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 918774915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c3550249501e9544a27aeeb5715fec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &918774918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1418,9 +1405,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 918774917}
-        m_TargetAssemblyTypeName: SceneChanges, Assembly-CSharp
-        m_MethodName: SceneTransitions
+      - m_Target: {fileID: 918774921}
+        m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
+        m_MethodName: JUN_SceneTransion
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1475,7 +1462,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918774915}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3e4a23a7caaf4814b2889bc7b4d29fb, type: 3}
   m_Name: 
@@ -1483,7 +1470,7 @@ MonoBehaviour:
   RetryCheck: 1
   audioSource: {fileID: 0}
   audioClip: {fileID: 0}
-  maskTexture: {fileID: 2800000, guid: 371b0afeb0523554e9560391376a818a, type: 3}
+  maskTexture: {fileID: 2800000, guid: ef76efab5462bee46b1d286975519aa6, type: 3}
 --- !u!1 &935814603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1657,7 +1644,6 @@ GameObject:
   - component: {fileID: 1048496471}
   - component: {fileID: 1048496470}
   - component: {fileID: 1048496469}
-  - component: {fileID: 1048496468}
   - component: {fileID: 1048496472}
   m_Layer: 5
   m_Name: ToTitle
@@ -1686,18 +1672,6 @@ RectTransform:
   m_AnchoredPosition: {x: -382, y: -156}
   m_SizeDelta: {x: 160, y: 55.76}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1048496468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1048496466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c3550249501e9544a27aeeb5715fec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1048496469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1742,9 +1716,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1048496468}
-        m_TargetAssemblyTypeName: SceneChanges, Assembly-CSharp
-        m_MethodName: SceneTransitions
+      - m_Target: {fileID: 1048496472}
+        m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
+        m_MethodName: JUN_SceneTransion
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1799,7 +1773,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048496466}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3e4a23a7caaf4814b2889bc7b4d29fb, type: 3}
   m_Name: 
@@ -1807,7 +1781,7 @@ MonoBehaviour:
   RetryCheck: 0
   audioSource: {fileID: 0}
   audioClip: {fileID: 0}
-  maskTexture: {fileID: 2800000, guid: 371b0afeb0523554e9560391376a818a, type: 3}
+  maskTexture: {fileID: 2800000, guid: ef76efab5462bee46b1d286975519aa6, type: 3}
 --- !u!1 &1086735095
 GameObject:
   m_ObjectHideFlags: 0
