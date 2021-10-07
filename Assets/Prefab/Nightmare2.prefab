@@ -123,6 +123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleValue: 0.275
-  scaleChangeTime: 1.75
-  delayTime: 2
+  scaleChangeTime: 2
+  delayTime: 2.25
   movementTime: 0.5

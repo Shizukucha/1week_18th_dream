@@ -84,15 +84,15 @@ public class SaccubusMovement_FanShape_right : MonoBehaviour
             {
                 GenerateNightmare_1();
             }
-            else if (6 <= generateDice && generateDice < 7)
+            else if (6 <= generateDice && generateDice < 8)
             {
                 GenerateNightmare_2();
             }
-            else if (7 <= generateDice && generateDice < 8)
+            else if (8 <= generateDice && generateDice < 9)
             {
                 GenerateNightmare_3();
             }
-            else if (8 <= generateDice && generateDice < 11)
+            else if (9 <= generateDice && generateDice < 11)
             {
                 GenerateBat();
             }

@@ -17,14 +17,13 @@ public class BakubakuController : MonoBehaviour
     {
         startPos = gameObject.transform.position;
         canMove = true;
-        maxSP = GameManager.I.MaxSP;
     }
 
     // Update is called once per frame
     void Update()
     {
         sp = GameManager.I.SP;
-
+        maxSP = GameManager.I.MaxSP;
 
         if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift) || Input.GetKeyDown(KeyCode.Return))
         {
@@ -34,7 +33,6 @@ public class BakubakuController : MonoBehaviour
                 GameManager.I.ResetSP();
                 GameManager.I.AddMaxSP();
                 JUN_SEManagerScript.instance.JUN_SettingPlaySE(7);
-
             }
         }
     }
