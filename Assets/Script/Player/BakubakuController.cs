@@ -50,6 +50,18 @@ public class BakubakuController : MonoBehaviour
             GameManager.I.AddScore(30);
             JUN_SEManagerScript.instance.JUN_SettingPlaySE(2);
         }
+
+        if (other.gameObject.tag == "Nightmare3")
+        {
+            GameManager.I.AddScore(10);
+            JUN_SEManagerScript.instance.JUN_SettingPlaySE(2);
+        }
+
+        if (other.gameObject.tag == "Bat")
+        {
+            GameManager.I.AddScore(20);
+            JUN_SEManagerScript.instance.JUN_SettingPlaySE(2);
+        }
     }
 
     void Move()

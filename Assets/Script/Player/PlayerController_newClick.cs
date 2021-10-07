@@ -43,11 +43,6 @@ public class PlayerController_newClick : MonoBehaviour
                 isTouch = true;
             }
 
-            if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
-            {
-                isTouch = true;
-            }
-
             if (Input.GetMouseButtonDown(0))
             {
                 isTouch = false;
@@ -71,7 +66,6 @@ public class PlayerController_newClick : MonoBehaviour
         {
             animator.SetBool("Walking", false);
         }
-
     }
 
 
@@ -106,7 +100,6 @@ public class PlayerController_newClick : MonoBehaviour
         if (other.gameObject.tag == "Bat")
         {
             Damage();
-            GameManager.I.DecreaseScore(10);
             GameManager.I.ResetSP();
             JUN_SEManagerScript.instance.JUN_SettingPlaySE(8);
         }
@@ -122,7 +115,4 @@ public class PlayerController_newClick : MonoBehaviour
     {
         canMove = true;
     }
-
-
-
 }

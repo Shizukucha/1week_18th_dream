@@ -73,12 +73,6 @@ public class GameManager : MonoBehaviour
         score += point;
     }
 
-    //スコア減算。プレイヤーから呼び出し。
-    public void DecreaseScore(int point)
-    {
-        score -= point;
-    }
-
     public static int GetScore()
     {
         return score;
