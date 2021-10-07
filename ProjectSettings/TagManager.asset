@@ -64,3 +64,9 @@ TagManager:
   - name: HowTo
     uniqueID: 4225336337
     locked: 0
+  - name: OverPanel
+    uniqueID: 3432474893
+    locked: 0
+  - name: DekaBaku
+    uniqueID: 3513244905
+    locked: 0

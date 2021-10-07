@@ -419,10 +419,15 @@ public class SceneSwitcher : MonoBehaviour
 	#endregion
 
 	//ここから追記します。スタートボタンからタイムラインを再生します。タイムラインオブジェクトにスクリプトがあるので、それを呼び出しています。
+	
+	
+	
+	
 	public void ClickSrartButton() 
 	{
+
 		TimeLineManager.instance.PlayTimeline();
-		Debug.Log("Timeline Start! no hazu");
+
 
 
 	}

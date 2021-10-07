@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 93cac7d06d40648daa0cc637d34a31da
+guid: 179e940f5ce4c7f49ac1485bbbfda116
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6664163515607358595
-    second: enterKey_0
-  - first:
-      213: 2087238870600373746
-    second: enterKey_1
-  - first:
-      213: 1849290473761809882
-    second: enterKey_2
-  - first:
-      213: 2947436500065043909
-    second: enterKey_3
-  - first:
-      213: 1488330864702149180
-    second: enterKey_4
+      213: 7277932453765735492
+    second: SpriteSheet_O12_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -130,76 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enterKey_0
-      rect:
-        serializedVersion: 2
-        x: 221
-        y: 411
-        width: 291
-        height: 81
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38c15e0c86ddb7c50800000000000000
-      internalID: 6664163515607358595
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enterKey_1
-      rect:
-        serializedVersion: 2
-        x: 233
-        y: 303
-        width: 228
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f5d583b1bc57fc10800000000000000
-      internalID: 2087238870600373746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enterKey_2
-      rect:
-        serializedVersion: 2
-        x: 239
-        y: 45
-        width: 244
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad5261f43eff9a910800000000000000
-      internalID: 1849290473761809882
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enterKey_3
+      name: SpriteSheet_O12_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 10
-        width: 217
-        height: 227
+        y: 0
+        width: 498
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,29 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c5c56071e567e820800000000000000
-      internalID: 2947436500065043909
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enterKey_4
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 259
-        width: 215
-        height: 248
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c3252d2390d97a410800000000000000
-      internalID: 1488330864702149180
+      spriteID: 4446efda109600560800000000000000
+      internalID: 7277932453765735492
       vertices: []
       indices: 
       edges: []
