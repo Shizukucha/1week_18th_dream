@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     GameObject scoreText;
     GameObject SPText;
     public float time = 60.0f;
-    public static int score = 999;
+    public static int score = 10;
     public int SP { get; set; }
     public static GameManager I;
 
@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
     {
         this.time -= Time.deltaTime;
         this.timerText.GetComponent<Text>().text = this.time.ToString("F0");
-        this.scoreText.GetComponent<Text>().text = "Score : " + score.ToString();
+        this.scoreText.GetComponent<Text>().text = score.ToString();
         this.SPText.GetComponent<Text>().text = "SP : " + SP.ToString();
 
         if (time < 0)

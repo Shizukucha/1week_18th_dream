@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using naichilab;
 
 public class ResultSceneManager : MonoBehaviour
 {
@@ -16,7 +17,9 @@ public class ResultSceneManager : MonoBehaviour
 
         Text scoreText = score.GetComponent<Text>();
 
-        scoreText.text = "Score : " + scoreResult.ToString(); ;
+        scoreText.text = scoreResult.ToString();
+
+        naichilab.RankingLoader.Instance.SendScoreAndShowRanking(scoreResult);
     }
 
     // Update is called once per frame
