@@ -2343,7 +2343,7 @@ MonoBehaviour:
   good: {fileID: 1086735095}
   soso: {fileID: 1239447279}
   awesomeScore: 1000
-  goodScore: 600
+  goodScore: 850
 --- !u!4 &1311376352
 Transform:
   m_ObjectHideFlags: 0
