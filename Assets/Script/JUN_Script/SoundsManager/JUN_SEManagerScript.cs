@@ -54,7 +54,7 @@ public class JUN_SEManagerScript : MonoBehaviour
                 audioSource.PlayOneShot(JUN_se[3]);//サキュバスの攻撃音
                 break;
             case 4:
-                audioSource.PlayOneShot(JUN_se[4]);//男の子に弾があたった音タイムアップ音
+                audioSource.PlayOneShot(JUN_se[4]);//男の子に弾があたった音
                 break;
             case 5:
                 audioSource.PlayOneShot(JUN_se[5]);//タイムアップ音
