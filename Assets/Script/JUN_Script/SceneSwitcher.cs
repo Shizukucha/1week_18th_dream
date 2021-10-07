@@ -4,6 +4,7 @@ using Prime31.TransitionKit;
 using UnityEngine.SceneManagement;
 
 
+
 /// <summary>
 /// To use the demo just add all three scenes to your build settings making sure the BoostrapScene is scene 0
 /// </summary>
@@ -35,17 +36,17 @@ public class SceneSwitcher : MonoBehaviour
 	public  static JUN_BGMManagerScript bgmManager;
 
 	public Texture2D maskTexture;
-	
 
 	//private bool _isUiVisible = true;
 
 
 	//シーン遷移時にボタンが壊れないように追加部分
 
-	private void Start()
+	void Start()
 	{
 		currentIndex = SceneManager.GetActiveScene().buildIndex; // 現在のシーンの順番を取得
-		
+
+
 	}
 
     private void Awake()
@@ -54,7 +55,7 @@ public class SceneSwitcher : MonoBehaviour
     }
 
 
-    public   void JUN_SceneTransion()
+	public   void JUN_SceneTransion()
 	{
 		//YMN_UIManager.startUp = false;
 
@@ -416,4 +417,16 @@ public class SceneSwitcher : MonoBehaviour
 	}
 	*/
 	#endregion
+
+	//ここから追記します。スタートボタンからタイムラインを再生します。タイムラインオブジェクトにスクリプトがあるので、それを呼び出しています。
+	public void ClickSrartButton() 
+	{
+		TimeLineManager.instance.PlayTimeline();
+		Debug.Log("Timeline Start! no hazu");
+
+
+	}
+
+
+
 }
