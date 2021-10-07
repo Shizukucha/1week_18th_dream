@@ -47,13 +47,13 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         this.time -= Time.deltaTime;
-        this.timerText.GetComponent<Text>().text = this.time.ToString("F0");
-        this.scoreText.GetComponent<Text>().text = score.ToString();
-        this.SPText.GetComponent<Text>().text = "SP : " + SP.ToString();
 
-        if (time < 0)
+        if (time < 80)
         {
             time = 0;
+            
+            SceneSwitcher.instance.JUN_SceneTransion();
+            
         }
 
         if(MaxSP < SP)
@@ -65,6 +65,10 @@ public class GameManager : MonoBehaviour
         {
             score = 0;
         }
+
+        this.timerText.GetComponent<Text>().text = this.time.ToString("F0");
+        this.scoreText.GetComponent<Text>().text = score.ToString();
+        this.SPText.GetComponent<Text>().text = "SP : " + SP.ToString();
     }
 
     //スコア加算。プレイヤーから呼び出し。
