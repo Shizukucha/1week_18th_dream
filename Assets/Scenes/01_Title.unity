@@ -8307,26 +8307,6 @@ PrefabInstance:
       propertyPath: JUN_SEslider
       value: 
       objectReference: {fileID: 1226238572}
-    - target: {fileID: 4998380872787648121, guid: cf19f026508e94aefa0bce0b1891336a, type: 3}
-      propertyPath: JUN_se.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: dad7ad237ac3006498a78487fab3baaf, type: 3}
-    - target: {fileID: 4998380872787648121, guid: cf19f026508e94aefa0bce0b1891336a, type: 3}
-      propertyPath: JUN_se.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: 38b9f5f88144d874ba040c24c57302fd, type: 3}
-    - target: {fileID: 4998380872787648121, guid: cf19f026508e94aefa0bce0b1891336a, type: 3}
-      propertyPath: JUN_se.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: 905f5f9cea5fff247b16b7f71913e51c, type: 3}
-    - target: {fileID: 4998380872787648121, guid: cf19f026508e94aefa0bce0b1891336a, type: 3}
-      propertyPath: JUN_se.Array.data[3]
-      value: 
-      objectReference: {fileID: 8300000, guid: b816f948d39b4624d8412010c35b8397, type: 3}
-    - target: {fileID: 4998380872787648121, guid: cf19f026508e94aefa0bce0b1891336a, type: 3}
-      propertyPath: JUN_se.Array.data[5]
-      value: 
-      objectReference: {fileID: 8300000, guid: 4ce1ca55c4e6c2e4487cb08e52bf45fe, type: 3}
     - target: {fileID: 4998380872787648123, guid: cf19f026508e94aefa0bce0b1891336a, type: 3}
       propertyPath: m_RootOrder
       value: 4

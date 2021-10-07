@@ -9,6 +9,7 @@ public class BakubakuController : MonoBehaviour
 
     private Vector3 startPos;
     private int sp;
+    private int maxSP;
     private bool canMove;
 
 
@@ -16,6 +17,7 @@ public class BakubakuController : MonoBehaviour
     {
         startPos = gameObject.transform.position;
         canMove = true;
+        maxSP = GameManager.I.MaxSP;
     }
 
     // Update is called once per frame
@@ -26,10 +28,11 @@ public class BakubakuController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
         {
-            if (10 <= sp && canMove == true)
+            if (maxSP <= sp && canMove == true)
             {
                 Move();
                 GameManager.I.ResetSP();
+                GameManager.I.AddMaxSP();
             }
         }
     }
@@ -39,11 +42,13 @@ public class BakubakuController : MonoBehaviour
         if (other.gameObject.tag == "Nightmare1")
         {
             GameManager.I.AddScore(10);
+            JUN_SEManagerScript.instance.JUN_SettingPlaySE(2);
         }
 
         if (other.gameObject.tag == "Nightmare2")
         {
             GameManager.I.AddScore(30);
+            JUN_SEManagerScript.instance.JUN_SettingPlaySE(2);
         }
     }
 

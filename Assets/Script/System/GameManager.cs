@@ -10,10 +10,13 @@ public class GameManager : MonoBehaviour
     GameObject SPText;
     public float time = 60.0f;
     public static int score = 10;
-    public int SP { get; set; }
+    public int SP = 0;
+    public int MaxSP = 10;
     public static GameManager I;
 
     private GameObject bakubaku;
+
+    [SerializeField] int additionalPointToMaxSP = 3;
 
     private void Awake()
     {
@@ -55,9 +58,9 @@ public class GameManager : MonoBehaviour
             time = 0;
         }
 
-        if(10 < SP)
+        if(MaxSP < SP)
         {
-            SP = 10;
+            SP = MaxSP;
         }
     }
 
@@ -80,6 +83,11 @@ public class GameManager : MonoBehaviour
     public void ResetSP()
     {
         SP = 0;
+    }
+
+    public void AddMaxSP()
+    {
+        MaxSP += additionalPointToMaxSP;
     }
 
 

@@ -62,14 +62,16 @@ public class PlayerController_newClick : MonoBehaviour
         {
             GameManager.I.AddScore(10);
             GameManager.I.AddSP(1);
-            JUN_SEManagerScript.instance.JUN_SettingPlaySE(10);
+            JUN_SEManagerScript.instance.JUN_SettingPlaySE(2);
         }
 
         if (other.gameObject.tag == "Nightmare2")
         {
+
+            Debug.Log("aaa");
             GameManager.I.AddScore(30);
             GameManager.I.AddSP(1);
-            JUN_SEManagerScript.instance.JUN_SettingPlaySE(10);
+            JUN_SEManagerScript.instance.JUN_SettingPlaySE(2);
         }
 
         if (other.gameObject.tag == "Bat")
