@@ -9,6 +9,7 @@ public class PlayerController_newClick : MonoBehaviour
     public float speed;
     private bool isTouch;
     private bool canMove;
+    private Animator animator;
 
     GameObject gameManager;
 
@@ -22,6 +23,8 @@ public class PlayerController_newClick : MonoBehaviour
 
         isTouch = false;
         canMove = true;
+
+        animator = GetComponent<Animator>();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -50,7 +53,15 @@ public class PlayerController_newClick : MonoBehaviour
             {
                 transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed);
             }
+
+            animator.SetBool("Walking", true);
+
         }
+        else
+        {
+            animator.SetBool("Walking", false);
+        }
+
     }
 
 
@@ -63,15 +74,16 @@ public class PlayerController_newClick : MonoBehaviour
             GameManager.I.AddScore(10);
             GameManager.I.AddSP(1);
             JUN_SEManagerScript.instance.JUN_SettingPlaySE(2);
+            animator.SetTrigger("Eat");
         }
 
         if (other.gameObject.tag == "Nightmare2")
         {
 
-            Debug.Log("aaa");
             GameManager.I.AddScore(30);
             GameManager.I.AddSP(1);
             JUN_SEManagerScript.instance.JUN_SettingPlaySE(2);
+            animator.SetTrigger("Eat");
         }
 
         if (other.gameObject.tag == "Bat")

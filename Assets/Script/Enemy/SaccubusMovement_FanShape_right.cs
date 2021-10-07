@@ -19,10 +19,13 @@ public class SaccubusMovement_FanShape_right : MonoBehaviour
     private float delta = 0;
     private float time;
     private GameObject nightmare;
+    private Animator animator;
 
     private void Start()
     {
         FanMove();
+
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -59,6 +62,9 @@ public class SaccubusMovement_FanShape_right : MonoBehaviour
 
         int generateDice;
         generateDice = Random.Range(0, 11);
+
+        animator.SetTrigger("AttackL");
+
 
         if (30 < time) // 30??????:90%??:10%
         {

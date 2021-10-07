@@ -16,6 +16,7 @@ public class SaccubusMovement_random : MonoBehaviour
     [SerializeField] GameObject batPrefab;
 
     private bool wait = true;
+    private Animator animator;
 
     private float time;
     private GameObject nightmare;
@@ -24,6 +25,8 @@ public class SaccubusMovement_random : MonoBehaviour
     {
         target = GameObject.Find("SaccubusPointer");
         wait = false;
+
+        animator = GetComponent<Animator>();
     }
 
     
@@ -76,6 +79,9 @@ public class SaccubusMovement_random : MonoBehaviour
     {
         int generateDice;
         generateDice = Random.Range(0, 11);
+
+        animator.SetTrigger("Attack");
+
 
         if (20 < time) // 40秒までは、①:90%、②:10%
         {
