@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9cf2fa3247ca46e281a9874b408027d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleValue: 0.2
+  scaleValue: 0.4
   scaleChangeTime: 2.5
   delayTime: 3
   movementTime: 0.5
