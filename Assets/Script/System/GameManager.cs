@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
     {
         this.time -= Time.deltaTime;
 
-        if (time < 80)
+        if (time < 0)
         {
             time = 0;
             

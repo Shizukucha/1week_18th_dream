@@ -2983,13 +2983,14 @@ GameObject:
   - component: {fileID: 1518954771}
   - component: {fileID: 1518954773}
   - component: {fileID: 1518954772}
+  - component: {fileID: 1518954774}
   m_Layer: 5
-  m_Name: NghtRule
+  m_Name: NightRule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1518954771
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3047,6 +3048,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1518954770}
   m_CullTransparentMesh: 1
+--- !u!114 &1518954774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518954770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24a38cc126d13436d82445e29614badc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstAlpha: 100
 --- !u!1 &1585136803
 GameObject:
   m_ObjectHideFlags: 0
@@ -3399,7 +3413,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cdf49e0548c1004a8b5aaddfff40b6e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 23b6f13e4fee240979e5251917ec8508, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3418,7 +3432,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623391946}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: 0, z: 0}
+  m_LocalPosition: {x: 15.32, y: 0, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3441,7 +3455,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.12, y: 5.12}
+    oldSize: {x: 5.4, y: 5.4}
     newSize: {x: 5.12, y: 5.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
