@@ -60,12 +60,23 @@ public class GameManager : MonoBehaviour
         {
             SP = MaxSP;
         }
+
+        if(score < 0)
+        {
+            score = 0;
+        }
     }
 
     //スコア加算。プレイヤーから呼び出し。
     public void AddScore(int point)
     {
         score += point;
+    }
+
+    //スコア減算。プレイヤーから呼び出し。
+    public void DecreaseScore(int point)
+    {
+        score -= point;
     }
 
     public static int GetScore()

@@ -43,7 +43,7 @@ public class PlayerController_newClick : MonoBehaviour
                 isTouch = true;
             }
 
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
             {
                 isTouch = true;
             }
@@ -106,6 +106,7 @@ public class PlayerController_newClick : MonoBehaviour
         if (other.gameObject.tag == "Bat")
         {
             Damage();
+            GameManager.I.DecreaseScore(10);
             GameManager.I.ResetSP();
             JUN_SEManagerScript.instance.JUN_SettingPlaySE(8);
         }
