@@ -15,7 +15,6 @@ public class PlayerController_newClick : MonoBehaviour
 
     [SerializeField] float shakeTime = 1.5f;
 
-
     void Start()
     {
         target = GameObject.Find("Pointer");
@@ -39,6 +38,11 @@ public class PlayerController_newClick : MonoBehaviour
     {
         if(canMove == true)
         {
+            if(gameObject.transform.position == target.transform.position)
+            {
+                isTouch = true;
+            }
+
             if (Input.GetKey(KeyCode.Space))
             {
                 isTouch = true;
@@ -54,8 +58,14 @@ public class PlayerController_newClick : MonoBehaviour
                 transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed);
             }
 
-            animator.SetBool("Walking", true);
-
+            if(isTouch == true)
+            {
+                animator.SetBool("Walking", false);
+            }
+            else if(isTouch == false)
+            {
+                animator.SetBool("Walking", true);
+            }
         }
         else
         {
@@ -79,9 +89,16 @@ public class PlayerController_newClick : MonoBehaviour
 
         if (other.gameObject.tag == "Nightmare2")
         {
-
-            GameManager.I.AddScore(30);
+            GameManager.I.AddScore(40);
             GameManager.I.AddSP(1);
+            JUN_SEManagerScript.instance.JUN_SettingPlaySE(2);
+            animator.SetTrigger("Eat");
+        }
+
+        if(other.gameObject.tag == "Nightmare3")
+        {
+            GameManager.I.AddScore(10);
+            GameManager.I.AddSP(10);
             JUN_SEManagerScript.instance.JUN_SettingPlaySE(2);
             animator.SetTrigger("Eat");
         }
@@ -90,7 +107,7 @@ public class PlayerController_newClick : MonoBehaviour
         {
             Damage();
             GameManager.I.ResetSP();
-            JUN_SEManagerScript.instance.JUN_SettingPlaySE(10);
+            JUN_SEManagerScript.instance.JUN_SettingPlaySE(8);
         }
     }
 

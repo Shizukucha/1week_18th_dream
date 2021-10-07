@@ -26,13 +26,15 @@ public class BakubakuController : MonoBehaviour
         sp = GameManager.I.SP;
 
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift) || Input.GetKeyDown(KeyCode.Return))
         {
             if (maxSP <= sp && canMove == true)
             {
                 Move();
                 GameManager.I.ResetSP();
                 GameManager.I.AddMaxSP();
+                JUN_SEManagerScript.instance.JUN_SettingPlaySE(7);
+
             }
         }
     }

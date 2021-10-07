@@ -13,6 +13,7 @@ public class SaccubusMovement_random : MonoBehaviour
 
     [SerializeField] GameObject nightmarePrefab1;
     [SerializeField] GameObject nightmarePrefab2;
+    [SerializeField] GameObject nightmarePrefab3;
     [SerializeField] GameObject batPrefab;
 
     private bool wait = true;
@@ -78,33 +79,43 @@ public class SaccubusMovement_random : MonoBehaviour
     public void Shot()
     {
         int generateDice;
-        generateDice = Random.Range(0, 11);
+        generateDice = Random.Range(1, 11);
 
         animator.SetTrigger("Attack");
 
 
-        if (20 < time) // 40秒までは、①:90%、②:10%
+        if (40 < time) // 40秒までは、①:70%、②:20%、③:10％
         {
-            if (generateDice < 10)
+            if (generateDice < 8)
             {
                 GenerateNightmare_1();
+            }
+            else if (8 <= generateDice && generateDice < 10)
+            {
+                GenerateNightmare_2();
             }
             else if (10 <= generateDice && generateDice < 11)
             {
-                GenerateNightmare_2();
+                GenerateBat();
             }
         }
-        else if (time <= 20)// 40秒をすぎれば、①:30%、②:20%、③:50%
+        else if (time <= 40)// 40秒をすぎれば、①:20%、②:30%、③:10%、④:40%
         {
-            if (generateDice < 4)
+            Debug.Log(generateDice);
+
+            if (generateDice < 3)
             {
                 GenerateNightmare_1();
             }
-            else if (4 <= generateDice && generateDice < 6)
+            else if (3 <= generateDice && generateDice < 6)
             {
                 GenerateNightmare_2();
             }
-            else if (6 <= generateDice && generateDice < 11)
+            else if (6 <= generateDice && generateDice < 7)
+            {
+                GenerateNightmare_3();
+            }
+            else if (7 <= generateDice && generateDice < 11)
             {
                 GenerateBat();
             }
@@ -121,6 +132,11 @@ public class SaccubusMovement_random : MonoBehaviour
     public void GenerateNightmare_2()
     {
         nightmare = Instantiate(nightmarePrefab2) as GameObject;
+    }
+
+    public void GenerateNightmare_3()
+    {
+        nightmare = Instantiate(nightmarePrefab3) as GameObject;
     }
 
     public void GenerateBat()

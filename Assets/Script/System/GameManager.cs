@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     GameObject timerText;
     GameObject scoreText;
     GameObject SPText;
-    public float time = 60.0f;
+    public float time = 92.0f;
     public static int score = 10;
     public int SP = 0;
     public int MaxSP = 10;
@@ -38,9 +38,7 @@ public class GameManager : MonoBehaviour
         this.scoreText = GameObject.Find("Score");
         this.SPText = GameObject.Find("SP");
 
-        time = 60f;
         score = 0;
-        SP = 0;
 
         bakubaku = GameObject.Find("Bakubaku");
     }

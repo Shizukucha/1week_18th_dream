@@ -14,6 +14,7 @@ public class SaccubusMovement_FanShape_left : MonoBehaviour
 
     [SerializeField] GameObject nightmarePrefab1;
     [SerializeField] GameObject nightmarePrefab2;
+    [SerializeField] GameObject nightmarePrefab3;
     [SerializeField] GameObject batPrefab;
 
     private float delta = 0;
@@ -52,31 +53,34 @@ public class SaccubusMovement_FanShape_left : MonoBehaviour
 
     public void FanMove()
     {
-        transform.DOMoveX(x, moveTime).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.OutQuad).SetLink(gameObject).SetRelative(true); ;
-        transform.DOMoveY(y, moveTime).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.InQuad).SetLink(gameObject).SetRelative(true); ;
+        transform.DOMoveX(x, moveTime).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.OutQuart).SetLink(gameObject).SetRelative(true); ;
+        transform.DOMoveY(y, moveTime).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.InQuart).SetLink(gameObject).SetRelative(true); ;
     }
 
 
     public void Shot()
     {
         int generateDice;
-        generateDice = Random.Range(0, 11);
+        generateDice = Random.Range(1, 11);
 
         animator.SetTrigger("AttackR");
 
-        if (45 < time) // 15??????:70%??:30%
+        if (60 < time) // ①:50%,③:10%,④:40%
         {
-            if (generateDice < 8)
+            if (generateDice < 6)
             {
                 GenerateNightmare_1();
             }
-            else if (8 <= generateDice && generateDice < 11)
+            else if (6 <= generateDice && generateDice < 7)
+            {
+                GenerateNightmare_3();
+            }
+            else if (7 <= generateDice && generateDice < 11)
             {
                 GenerateBat();
             }
-
         }
-        else if (time <= 45)// 15????????:60%??:30%??:10%
+        else if (30 < time && time <= 60)// ①:60%,②:30%,③:10%
         {
             if (generateDice < 7)
             {
@@ -87,6 +91,25 @@ public class SaccubusMovement_FanShape_left : MonoBehaviour
                 GenerateNightmare_2();
             }
             else if(10 <= generateDice && generateDice < 11)
+            {
+                GenerateBat();
+            }
+        }
+        else if (time <= 30)// ①:60%,②:20%,③:10%,④:10%
+        {
+            if (generateDice < 7)
+            {
+                GenerateNightmare_1();
+            }
+            else if (7 <= generateDice && generateDice < 9)
+            {
+                GenerateNightmare_2();
+            }
+            else if (9 <= generateDice && generateDice < 10)
+            {
+                GenerateNightmare_2();
+            }
+            else if (10 <= generateDice && generateDice < 11)
             {
                 GenerateBat();
             }
@@ -104,6 +127,11 @@ public class SaccubusMovement_FanShape_left : MonoBehaviour
     public void GenerateNightmare_2()
     {
         nightmare = Instantiate(nightmarePrefab2) as GameObject;
+    }
+
+    public void GenerateNightmare_3()
+    {
+        nightmare = Instantiate(nightmarePrefab3) as GameObject;
     }
 
     public void GenerateBat()
