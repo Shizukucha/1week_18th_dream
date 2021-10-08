@@ -42,7 +42,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2bf81dbe979f3d74cb14b52f71338420, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 184222292a8bc407cbfd09b4ff4871b4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
@@ -142,6 +142,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   JUN_BGMslider: {fileID: 0}
   JUN_clips:
-  - {fileID: 8300000, guid: 2bf81dbe979f3d74cb14b52f71338420, type: 3}
-  - {fileID: 8300000, guid: 2bf81dbe979f3d74cb14b52f71338420, type: 3}
+  - {fileID: 8300000, guid: 184222292a8bc407cbfd09b4ff4871b4, type: 3}
+  - {fileID: 8300000, guid: 0d7c1c9a2c5d74d8ab657de50d69112c, type: 3}
   - {fileID: 8300000, guid: a0580477acc5cf8469f3bda10be8d7b9, type: 3}

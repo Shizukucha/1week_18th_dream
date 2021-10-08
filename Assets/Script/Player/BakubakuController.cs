@@ -11,7 +11,7 @@ public class BakubakuController : MonoBehaviour
     private int sp;
     private int maxSP;
     private bool canMove;
-
+    private float time;
 
     private void Start()
     {
@@ -24,43 +24,50 @@ public class BakubakuController : MonoBehaviour
     {
         sp = GameManager.I.SP;
         maxSP = GameManager.I.MaxSP;
+        time = GameManager.I.time;
 
-        if (Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
+        if(0 < time )
         {
-            if (maxSP <= sp && canMove == true)
+            if (Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
             {
-                Move();
-                GameManager.I.ResetSP();
-                GameManager.I.AddMaxSP();
-                JUN_SEManagerScript.instance.JUN_SettingPlaySE(7);
+                if (maxSP <= sp && canMove == true)
+                {
+                    Move();
+                    GameManager.I.ResetSP();
+                    GameManager.I.AddMaxSP();
+                    JUN_SEManagerScript.instance.JUN_SettingPlaySE(7);
+                }
             }
         }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Nightmare1")
+        if(0 < time)
         {
-            GameManager.I.AddScore(10);
-            JUN_SEManagerScript.instance.JUN_SettingPlaySE(2);
-        }
+            if (other.gameObject.tag == "Nightmare1")
+            {
+                GameManager.I.AddScore(10);
+                JUN_SEManagerScript.instance.JUN_SettingPlaySE(2);
+            }
 
-        if (other.gameObject.tag == "Nightmare2")
-        {
-            GameManager.I.AddScore(30);
-            JUN_SEManagerScript.instance.JUN_SettingPlaySE(2);
-        }
+            if (other.gameObject.tag == "Nightmare2")
+            {
+                GameManager.I.AddScore(30);
+                JUN_SEManagerScript.instance.JUN_SettingPlaySE(2);
+            }
 
-        if (other.gameObject.tag == "Nightmare3")
-        {
-            GameManager.I.AddScore(10);
-            JUN_SEManagerScript.instance.JUN_SettingPlaySE(2);
-        }
+            if (other.gameObject.tag == "Nightmare3")
+            {
+                GameManager.I.AddScore(10);
+                JUN_SEManagerScript.instance.JUN_SettingPlaySE(2);
+            }
 
-        if (other.gameObject.tag == "Bat")
-        {
-            GameManager.I.AddScore(20);
-            JUN_SEManagerScript.instance.JUN_SettingPlaySE(2);
+            if (other.gameObject.tag == "Bat")
+            {
+                GameManager.I.AddScore(20);
+                JUN_SEManagerScript.instance.JUN_SettingPlaySE(2);
+            }
         }
     }
 

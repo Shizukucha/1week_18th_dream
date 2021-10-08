@@ -70,7 +70,7 @@ public class SceneSwitcher : MonoBehaviour
 			}
             else
             {
-				JUN_SEManagerScript.instance.JUN_SettingPlaySE(5);// タイムアップ音
+				// JUN_SEManagerScript.instance.JUN_SettingPlaySE(5);// タイムアップ音
 			}
 			
 			//次のシーンへ遷移

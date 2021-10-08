@@ -7,14 +7,13 @@ public class GameManager : MonoBehaviour
 {
     GameObject timerText;
     GameObject scoreText;
-    GameObject SPText;
     public float time = 92.0f;
     public static int score = 10;
     public int SP = 0;
     public int MaxSP = 10;
     public static GameManager I;
 
-    private GameObject bakubaku;
+    private bool oneShot = false;
 
     [SerializeField] int additionalPointToMaxSP = 3;
 
@@ -36,11 +35,8 @@ public class GameManager : MonoBehaviour
     {
         this.timerText = GameObject.Find("Time");
         this.scoreText = GameObject.Find("Score");
-        this.SPText = GameObject.Find("SP");
 
         score = 0;
-
-        bakubaku = GameObject.Find("Bakubaku");
     }
 
     // Update is called once per frame
@@ -51,12 +47,18 @@ public class GameManager : MonoBehaviour
         if (time < 0)
         {
             time = 0;
-            
-            SceneSwitcher.instance.JUN_SceneTransion();
-            
+
+            if(oneShot == false)
+            {
+                //タイムアップ音
+                JUN_SEManagerScript.instance.JUN_SettingPlaySE(5);
+                oneShot = true;
+            }
+
+            StartCoroutine("DelaySceneTransition");
         }
 
-        if(MaxSP < SP)
+        if (MaxSP < SP)
         {
             SP = MaxSP;
         }
@@ -68,13 +70,22 @@ public class GameManager : MonoBehaviour
 
         this.timerText.GetComponent<Text>().text = this.time.ToString("F0");
         this.scoreText.GetComponent<Text>().text = score.ToString();
-        this.SPText.GetComponent<Text>().text = "SP : " + SP.ToString();
     }
+
+    IEnumerator DelaySceneTransition()
+    {
+        yield return new WaitForSeconds(2);
+        SceneSwitcher.instance.JUN_SceneTransion();// 2秒待つ
+    }
+
 
     //スコア加算。プレイヤーから呼び出し。
     public void AddScore(int point)
     {
-        score += point;
+        if(0 < time)
+        {
+            score += point;
+        }
     }
 
     public static int GetScore()
@@ -84,7 +95,10 @@ public class GameManager : MonoBehaviour
 
     public void AddSP(int point)
     {
-        SP += point;
+        if(0 < time)
+        {
+            SP += point;
+        }
     }
 
     public void ResetSP()
