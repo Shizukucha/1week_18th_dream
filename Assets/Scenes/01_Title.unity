@@ -996,6 +996,7 @@ GameObject:
   - component: {fileID: 146809830}
   - component: {fileID: 146809829}
   - component: {fileID: 146809828}
+  - component: {fileID: 146809831}
   m_Layer: 5
   m_Name: NikoButton
   m_TagString: Untagged
@@ -1079,9 +1080,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1887859963}
-        m_TargetAssemblyTypeName: JUN_SEManagerScript, Assembly-CSharp
-        m_MethodName: JUN_SettingPlaySE
+      - m_Target: {fileID: 146809831}
+        m_TargetAssemblyTypeName: ButtonSEPlayer, Assembly-CSharp
+        m_MethodName: PlaySE
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1129,6 +1130,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146809826}
   m_CullTransparentMesh: 1
+--- !u!114 &146809831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146809826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 030c49ff1ad4f458c930075dd5e1805d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &163707434
 GameObject:
   m_ObjectHideFlags: 0
@@ -3824,6 +3837,7 @@ GameObject:
   - component: {fileID: 624870614}
   - component: {fileID: 624870612}
   - component: {fileID: 624870613}
+  - component: {fileID: 624870616}
   m_Layer: 5
   m_Name: HowTo_Button
   m_TagString: Untagged
@@ -3906,9 +3920,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1887859963}
-        m_TargetAssemblyTypeName: JUN_SEManagerScript, Assembly-CSharp
-        m_MethodName: JUN_SettingPlaySE
+      - m_Target: {fileID: 624870616}
+        m_TargetAssemblyTypeName: ButtonSEPlayer, Assembly-CSharp
+        m_MethodName: PlaySE
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3975,6 +3989,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624870610}
   m_CullTransparentMesh: 1
+--- !u!114 &624870616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624870610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 030c49ff1ad4f458c930075dd5e1805d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &626586051 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2656888391165701807, guid: 4b5a36feaeb2ed944881f574011a7d99, type: 3}
@@ -6920,6 +6946,7 @@ GameObject:
   - component: {fileID: 1226238571}
   - component: {fileID: 1226238572}
   - component: {fileID: 1226238573}
+  - component: {fileID: 1226238574}
   m_Layer: 5
   m_Name: SESlider
   m_TagString: Untagged
@@ -7017,9 +7044,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1887859963}
-          m_TargetAssemblyTypeName: JUN_SEManagerScript, Assembly-CSharp
-          m_MethodName: JUN_SettingPlaySE
+        - m_Target: {fileID: 1226238574}
+          m_TargetAssemblyTypeName: ButtonSEPlayer, Assembly-CSharp
+          m_MethodName: PlaySE
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -7029,6 +7056,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1226238574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226238570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 030c49ff1ad4f458c930075dd5e1805d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1241450754
 GameObject:
   m_ObjectHideFlags: 0
@@ -11813,26 +11852,6 @@ PrefabInstance:
       propertyPath: JUN_SEslider
       value: 
       objectReference: {fileID: 1226238572}
-    - target: {fileID: 4998380872787648121, guid: cf19f026508e94aefa0bce0b1891336a, type: 3}
-      propertyPath: JUN_se.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: dad7ad237ac3006498a78487fab3baaf, type: 3}
-    - target: {fileID: 4998380872787648121, guid: cf19f026508e94aefa0bce0b1891336a, type: 3}
-      propertyPath: JUN_se.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: 38b9f5f88144d874ba040c24c57302fd, type: 3}
-    - target: {fileID: 4998380872787648121, guid: cf19f026508e94aefa0bce0b1891336a, type: 3}
-      propertyPath: JUN_se.Array.data[3]
-      value: 
-      objectReference: {fileID: 8300000, guid: db85a40b1993a8b439a25b8f4ce4b0ac, type: 3}
-    - target: {fileID: 4998380872787648121, guid: cf19f026508e94aefa0bce0b1891336a, type: 3}
-      propertyPath: JUN_se.Array.data[5]
-      value: 
-      objectReference: {fileID: 8300000, guid: 4077e4cb2a495ea4885ad5431044ba8a, type: 3}
-    - target: {fileID: 4998380872787648122, guid: cf19f026508e94aefa0bce0b1891336a, type: 3}
-      propertyPath: m_Volume
-      value: 0.15
-      objectReference: {fileID: 0}
     - target: {fileID: 4998380872787648123, guid: cf19f026508e94aefa0bce0b1891336a, type: 3}
       propertyPath: m_RootOrder
       value: 4
