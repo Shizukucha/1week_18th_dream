@@ -1079,6 +1079,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1887859963}
+        m_TargetAssemblyTypeName: JUN_SEManagerScript, Assembly-CSharp
+        m_MethodName: JUN_SettingPlaySE
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &146809829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8213,7 +8225,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1580969953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11797,6 +11809,10 @@ PrefabInstance:
       propertyPath: JUN_se.Array.data[1]
       value: 
       objectReference: {fileID: 8300000, guid: 38b9f5f88144d874ba040c24c57302fd, type: 3}
+    - target: {fileID: 4998380872787648121, guid: cf19f026508e94aefa0bce0b1891336a, type: 3}
+      propertyPath: JUN_se.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: db85a40b1993a8b439a25b8f4ce4b0ac, type: 3}
     - target: {fileID: 4998380872787648121, guid: cf19f026508e94aefa0bce0b1891336a, type: 3}
       propertyPath: JUN_se.Array.data[5]
       value: 
