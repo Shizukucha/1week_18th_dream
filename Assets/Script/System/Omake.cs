@@ -22,16 +22,27 @@ public class Omake : MonoBehaviour
     public void OnClickNikoNikoButton() 
     {
         anim.SetTrigger("Niko");
+        showUkiUkiObj();
     }
 
     public void showUkiUkiObj() 
     {
         ukiukiObj.SetActive(true);
+        StartCoroutine("offUkiUkiObj");
     }
 
+    /*
     public void offUkiUkiObj()
     {
         ukiukiObj.SetActive(false);
     }
+    */
+
+    IEnumerator offUkiUkiObj()
+    {
+        yield return new WaitForSeconds(1);
+        ukiukiObj.SetActive(false);
+    }
+
 
 }
