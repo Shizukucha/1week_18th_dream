@@ -51,19 +51,19 @@ public class JUN_SEManagerScript : MonoBehaviour
                 audioSource.PlayOneShot(JUN_se[2]);//バクが夢を食べるときの音
                 break;
             case 10:
-                audioSource.PlayOneShot(JUN_se[3]);//サキュバスの攻撃音
+                audioSource.PlayOneShot(JUN_se[3]);//サキュバスの攻撃音 使わない
                 break;
             case 4:
-                audioSource.PlayOneShot(JUN_se[4]);//男の子に弾があたった音
+                audioSource.PlayOneShot(JUN_se[4]);//男の子に弾があたった音　使わない
                 break;
             case 5:
                 audioSource.PlayOneShot(JUN_se[5]);//タイムアップ音
                 break;
             case 6:
-                audioSource.PlayOneShot(JUN_se[6]);//ららーん（リザルト画面遷移音）
+                audioSource.PlayOneShot(JUN_se[6]);//スペシャル音
                 break;
             case 7:
-                audioSource.PlayOneShot(JUN_se[7]);//ふつう（リザルト画面遷移音）
+                audioSource.PlayOneShot(JUN_se[7]);//
                 break;
             case 8:
                 audioSource.PlayOneShot(JUN_se[8]);//ZZZ（リザルト画面遷移音）

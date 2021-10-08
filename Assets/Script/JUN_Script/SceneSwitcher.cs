@@ -16,13 +16,14 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitcher : MonoBehaviour
 {
-	[SerializeField] int RetryCheck;
+	[SerializeField]   int RetryCheck;
 
 	public AudioSource audioSource;
 	public AudioClip audioClip;
 	public static SceneSwitcher instance;
 
 	private static  int currentIndex; // 現在のシーンが何番目なのか格納
+	static int RetryONOFF;
 
 
 
@@ -64,14 +65,7 @@ public class SceneSwitcher : MonoBehaviour
 
 			JUN_BGMManagerScript.instance.JUN_TransitionBGM(currentIndex);
             
-			if (currentIndex ==  0)
-            {
-				JUN_SEManagerScript.instance.JUN_SettingPlaySE(0);//「スタート」「タイトルへ」「リトライ」音
-			}
-            else
-            {
-				// JUN_SEManagerScript.instance.JUN_SettingPlaySE(5);// タイムアップ音
-			}
+	
 			
 			//次のシーンへ遷移
 			JUN_OnMaskToScene(currentIndex);
@@ -79,18 +73,42 @@ public class SceneSwitcher : MonoBehaviour
 
 		}
 
-		else if(currentIndex ==2 ) //現在が最後のシーンの場合かつリトライするとき
+		else if(currentIndex == 2 && RetryCheck ==1) //現在が最後のシーンの場合かつリトライするとき
 		{
+			Debug.Log("リトライ");
 			JUN_SEManagerScript.instance.JUN_SettingPlaySE(0);//「スタート」「タイトルへ」「リトライ」音
+			RetryONOFF = 1; 
+			Retryjudge();
+			JUN_BGMManagerScript.instance.JUN_TransitionBGM(2);
 			JUN_OnMaskToScene(currentIndex);
 		}
-        
+		else  //現在が最後のシーンの場合かつタイトルへ戻る時
+		{
+			Debug.Log("タイトルへ");
+			JUN_SEManagerScript.instance.JUN_SettingPlaySE(0);//「スタート」「タイトルへ」「リトライ」音
+			RetryONOFF = 0;
+			Retryjudge();
+			JUN_BGMManagerScript.instance.JUN_TransitionBGM(2);
+			JUN_OnMaskToScene(currentIndex);
+		}
+
 
 		// sceneCanvas = YMN_UIManager.waitUI(sceneCanvas);
 	}
 	
 	
+	public　static  bool Retryjudge()
+    {
+		if (RetryONOFF > 0)
+        {
+			return true;
+        }
+        else
+        {
+			return false;
+        }
 
+	}
 	
 
 	/// <summary>

@@ -972,6 +972,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'SEManager '
       objectReference: {fileID: 0}
+    - target: {fileID: 4998380872787648120, guid: cf19f026508e94aefa0bce0b1891336a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4998380872787648123, guid: cf19f026508e94aefa0bce0b1891336a, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -3846,6 +3850,10 @@ PrefabInstance:
     - target: {fileID: 2399397540299226323, guid: 52c94981562f24aceaaef4186ccaa589, type: 3}
       propertyPath: m_Name
       value: BGMManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2399397540299226323, guid: 52c94981562f24aceaaef4186ccaa589, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2399397540299226332, guid: 52c94981562f24aceaaef4186ccaa589, type: 3}
       propertyPath: m_RootOrder

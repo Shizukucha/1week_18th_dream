@@ -1489,7 +1489,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -3.199997, y: 0}
+  m_AnchoredPosition: {x: -3.2000122, y: 0}
   m_SizeDelta: {x: 16.4, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &186551418
@@ -1505,19 +1505,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.54901963, g: 0.7294118, b: 0.7411765, a: 1}
+  m_Color: {r: 0.99215686, g: 0.78431374, b: 0.3019608, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4625381213070704016, guid: d20c15dd3ceda7e479c16797db89a85d, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 7976225344366374890, guid: 3210537109bde3749bb3a541f9642732, type: 3}
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
+  m_FillMethod: 0
+  m_FillAmount: 0.5
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -1755,8 +1755,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 7976225344366374890, guid: 3210537109bde3749bb3a541f9642732, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5029,7 +5029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.69312924, g: 0.8301887, b: 0.7829616, a: 1}
+  m_Color: {r: 0.4719206, g: 0.5366961, b: 0.9528302, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6057,8 +6057,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 7976225344366374890, guid: 3210537109bde3749bb3a541f9642732, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6895,6 +6895,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1226238571}
   - component: {fileID: 1226238572}
+  - component: {fileID: 1226238573}
   m_Layer: 5
   m_Name: SESlider
   m_TagString: Untagged
@@ -6969,12 +6970,41 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1420038076}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 0.7
+  m_MaxValue: 0.3
   m_WholeNumbers: 0
-  m_Value: 0.7
+  m_Value: 0.15
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1226238573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226238570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1887859963}
+          m_TargetAssemblyTypeName: JUN_SEManagerScript, Assembly-CSharp
+          m_MethodName: JUN_SettingPlaySE
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1241450754
 GameObject:
   m_ObjectHideFlags: 0
@@ -7523,7 +7553,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -3.2400055, y: 5.6499996}
+  m_AnchoredPosition: {x: -3.2399902, y: 5.6499996}
   m_SizeDelta: {x: 81.42, y: 33.94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1420038077
@@ -7539,7 +7569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.65882355, g: 0.79215693, b: 0.74509805, a: 1}
+  m_Color: {r: 0.4745098, g: 0.5372549, b: 0.9529412, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9051,19 +9081,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6078231, g: 0.80470514, b: 0.8207547, a: 1}
+  m_Color: {r: 0.99215686, g: 0.78431374, b: 0.3019608, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4625381213070704016, guid: d20c15dd3ceda7e479c16797db89a85d, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 7976225344366374890, guid: 3210537109bde3749bb3a541f9642732, type: 3}
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
+  m_FillMethod: 0
+  m_FillAmount: 0.5
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -9403,6 +9433,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
         m_MethodName: ClickSrartButton
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1887859963}
+        m_TargetAssemblyTypeName: JUN_SEManagerScript, Assembly-CSharp
+        m_MethodName: JUN_SettingPlaySE
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9961,6 +10003,17 @@ Transform:
   m_Father: {fileID: 2134474570}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1887859963 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4998380872787648121, guid: cf19f026508e94aefa0bce0b1891336a, type: 3}
+  m_PrefabInstance: {fileID: 4998380872941576964}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2328f1215eccc24c81244d56d8fbb9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1897126758
 GameObject:
   m_ObjectHideFlags: 0
@@ -10953,6 +11006,8 @@ PlayableDirector:
     value: {fileID: 199035173}
   - key: {fileID: -5803050006264588051, guid: 731da46011c68aa4faa58da5cc69935d, type: 2}
     value: {fileID: 1488146188}
+  - key: {fileID: -2143827649048764928, guid: 731da46011c68aa4faa58da5cc69935d, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &2039450830
@@ -11734,6 +11789,22 @@ PrefabInstance:
       propertyPath: JUN_SEslider
       value: 
       objectReference: {fileID: 1226238572}
+    - target: {fileID: 4998380872787648121, guid: cf19f026508e94aefa0bce0b1891336a, type: 3}
+      propertyPath: JUN_se.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: dad7ad237ac3006498a78487fab3baaf, type: 3}
+    - target: {fileID: 4998380872787648121, guid: cf19f026508e94aefa0bce0b1891336a, type: 3}
+      propertyPath: JUN_se.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 38b9f5f88144d874ba040c24c57302fd, type: 3}
+    - target: {fileID: 4998380872787648121, guid: cf19f026508e94aefa0bce0b1891336a, type: 3}
+      propertyPath: JUN_se.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4077e4cb2a495ea4885ad5431044ba8a, type: 3}
+    - target: {fileID: 4998380872787648122, guid: cf19f026508e94aefa0bce0b1891336a, type: 3}
+      propertyPath: m_Volume
+      value: 0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 4998380872787648123, guid: cf19f026508e94aefa0bce0b1891336a, type: 3}
       propertyPath: m_RootOrder
       value: 4

@@ -43,9 +43,18 @@ public class JUN_BGMManagerScript : MonoBehaviour
 
         Debug.Log("今のシーンは" + currentIndex);
         if (currentIndex == 2) 
-        { 
-            audioSource.clip = JUN_clips[0];
-           
+        {
+            if (SceneSwitcher.Retryjudge() == true)
+            {
+                Debug.Log("こっちはプレイ画面");
+                audioSource.clip = JUN_clips[1];
+            }
+            else if(SceneSwitcher.Retryjudge() == false)
+            {
+                Debug.Log("こっちはタイトル画面");
+                audioSource.clip = JUN_clips[0];
+            }
+
             StartCoroutine(WaitPlaySe());
 
         }
